@@ -3,40 +3,86 @@
 <head>
 <meta charset="utf-8">
 <title>Cicadas Only</title>
+<!-- my custom stylesheet -->
 <link rel="stylesheet" type="text/css" href="style.css">
+<!-- add Google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Montserrat|">
+<!-- favicon -->
+<link rel="icon" type="image/icon" href="favicon.ico">
 <script src="script.js"></script>
+<!-- font awesome library -->
+<script src="https://kit.fontawesome.com/3efc21db7c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <div id="logo">HTML</div>
-        <nav>  
-            <ul>
-                <li><a href="/">Home</a>
-                <li><a href="/link">Page</a>
-            </ul>
+        <div class = "logo" id = "logo">Cicadas<i class="fab fa-gratipay"></i>Only</div>
+        <!-- navigation -->
+        <nav class = "topnav" id = "top-nav">   
+            <a href = "#home" class = "active">Home</a>
+            <a href = "#testimonials">Testimonials</a>
         </nav>
+        <!-- displays when user has 'signed up' -->
+        <div class = "hidden" id = "user"><em id = "user-welcome">Welcome,&nbsp;</em>&nbsp;<span class = ""><a href=#profile><i class="fas fa-user-circle"></i><a></a></span></div>
         </header>
         <main role="main">
-        <article>
-            <h2>Title 1</h2>
-            <p>Content 1</p>
-        </article>
-        <article>
-            <h2>Title 2</h2>
-            <p>Content 2</p>
-        </article>
+        <p id = "intro">Are you ready to <em>break out of your shell</em>?<br>
+        Well, get your head out of the ground, and sign up for <em>Cicadas Only</em>!</p>
+        <p id = "about">At <em>Cicadas Only</em>, we aim to match you with an eligible cicada who has just burst onto the scene and is ready to meet you! We guarantee you will find a partner for life!</p>
         </main>
-        <section>
-        A group of related content
+        <a name="testimonials"></a>
+        <section id="testimonials">
+        <h3>Our clients are SCREAMING our praises!</h3>
+        <div class = "container t1" id="t1">
+            <div class = "image" id="t1-image">
+                <img src = "/images/t1.jpg" alt="a happy customer">
+            </div>
+            <div class = "text" id="t1-text">
+                <em>No wonder Cicadas Only is all the buzz! I was positively SWARMED with options!</em>
+            </div>
+        </div>
+        <h3>Our clients are SCREAMING our praises!</h3>
+        <div class = "container t3" id="t3">
+            <div class = "image" id="t3-image">
+                <img src = "/images/t3.jpg" alt="another happy customer">
+            </div>
+            <div class = "text" id="t3-text">
+                <em>After a seventeen year dry spell, Cicadas Only helped me get my groove back! Thanks, Cicadas Only!</em>
+            </div>
+        </div>
         </section>
-        <aside>
-        Sidebar
-        </aside>
+        <a name="join"></a>
+        <section class = "hidden" id="signup"></section>
+        <h3>Sign Up Now!</h3>
+        <br>
+        <label for="user-name">Your First Name</label>
+        <input type="text" id="user-name">
+        <br>
+        <label for="user-age">Years Underground</label>
+        <input type="number" id="user-age">
+        <div class="hidden" id="age-warning">You must have spent at least 17 years underground to join!</div>
+        <br>
+        <div class="hidden" id="submit-warning">All fields are required to join!</div>
+        <div class="joinbutton" id="join-button" onclick="">Sign Me Up!</div>
+        </section>
+        <a name="profile"></a>
+        <section class = "hidden" id="user-profile">
+            <h3>Your Profile</h3>
+            <br>
+            <div class = "image" id="profile-image">
+                <img src="/images/profile.png" alt="user profile image">
+            </div>
+            <div class = "bio" id="bio">
+                <ul>
+                    <li id="bio-name">Name:&nbsp</li>
+                    <li id="bio-age">Age:&nbsp;</li>
+                </ul>
+            </div>
+
+        </section>
         <footer>
-        <p>&copy; HTML CheatSheet</p>
-        <address>
-            Contact <a href="mailto:me@htmlg.com">me</a>
-        </address>
+        <div class ="showjoin" id="show-join" onclick="">Join now!</div>
+        <p class="contact">Contact Info: Just scream loudly at some trees, we'll hear you.</p>
         </footer>
 </body>
 </html>
