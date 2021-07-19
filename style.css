@@ -16,10 +16,17 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: "Pacifico", cursive;
 }
+
+h1 {
+    font-size: 48px;
+}
 .logo {
     background-color: #88aa3d;
     color:#453d2b;
-    width: 100%
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
 }
 section {
     width: 90%;
@@ -54,4 +61,11 @@ a {
     text-decoration: none;
 }
 
+.t img{
+    max-height: 400px;
+}
+
+#hamburger {
+    float: right;
+}
 
