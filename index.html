@@ -16,74 +16,33 @@
 </head>
 <body>
     <header>
-        <div class = "logo" id = "logo"><h1>Cicadas<i style="color:firebrick" class="fab fa-gratipay"></i>Only</h1></div>
+        <div class = "logo" id = "logo"><h1>Cicadas<i style="color:firebrick" class="fab fa-gratipay"></i>Only</h1>
+        </div>
+
         <!-- navigation -->
-        <nav class = "topnav" id = "top-nav">   
-            <a href = "#home" class = "active">Home</a>
-            <a href = "#testimonials">Testimonials</a>
-            <a href ="javascript:void(0);" class="hamburger" onclick=""><i class="fas fa-bars"></i></a>
-        </nav>
-        <!-- displays when user has 'signed up' -->
-        <div style="display:none" id = "user"><em id = "user-welcome">Welcome,&nbsp;</em>&nbsp;<span class = "usericon"><a href=#profile><i class="fas fa-user-circle"></i><a></a></span></div>
+        <div class = "topnav" id = "top-nav">
+            
+          
+            <div id = "about" class = "active">About</div>
+            <div id = "mentors">Mentors</div>
+            <div id = "students">Student Work</div>
+          
+        </div>
         </header>
-        <main role="main">
-        <a name="home"></a>
-        <p id = "intro">Are you ready to <em>break out of your shell</em>?<br>
-        Well, get your head out of the ground, and sign up for <em>Cicadas Only</em>!</p>
-        <p id = "about">At <em>Cicadas Only</em>, we aim to match you with an eligible cicada who has just burst onto the scene and is ready to meet you! We guarantee you will find a partner for life!</p>
-        
-        <a name="testimonials"></a>
-        <section id="testimonials">
-        <h5>Our clients are SCREAMING our praises!</h5>
-        <div class = "container t-top t1" id="t1">
-            <div class = "image t" id="t1-image">
-                <img src = "images/t1.jpg" alt="a happy customer">
-            </div>
-            <div class = "text t" id="t1-text">
-                <em>No wonder Cicadas Only is all the buzz! I was positively SWARMED with options!</em>
-            </div>
+    <div id="main">
+        <div id="soon"><h2><i style="color:firebrick" class="fab fa-gratipay"></i>&nbsp;Coming Soon!&nbsp;<i style="color:firebrick" class="fab fa-gratipay"></i></h2></div>
+        <div id="about-section" style="display:none"></div>
+        <div id="mentor-section" style="display:none">
+            <div id="ryan"></div>
+            <div id="rachel"></div>
+            <div id="drew"></div>
+            <div id="matthew"></div>
         </div>
-        <div class = "container t-top t3" id="t3">
-            <div class = "image t" id="t3-image">
-                <img src = "images/t3.jpg" alt="another happy customer">
-            </div>
-            <div class = "text" id="t3-text">
-                <em>After a seventeen year dry spell, Cicadas Only helped me get my groove back! Thanks, Cicadas Only!</em>
-            </div>
-        </div>
-        </section>
-        <a name="join"></a>
-        <section style="display:none" id="signup"></section>
-        <h5>Sign Up Now!</h5>
-        <br>
-        <label for="user-name">Your First Name</label>
-        <input type="text" id="user-name">
-        <br>
-        <label for="user-age">Years Underground</label>
-        <input type="number" id="user-age">
-        <div style="display:none" id="age-warning">You must have spent at least 17 years underground to join!</div>
-        <br>
-        <div style="display:none" id="submit-warning">All fields are required to join!</div>
-        <div class="joinbutton" id="join-button" onclick=""><h5>Sign Me Up!</h5></div>
-        </section>
-        <a name="profile"></a>
-        <section style="display:none" id="user-profile">
-            <h5>Your Profile</h5>
-            <br>
-            <div class = "image" id="profile-image">
-                <img src="images/profile.png" alt="user profile image">
-            </div>
-            <div class = "bio" id="bio">
-                <ul>
-                    <li id="bio-name">Name:&nbsp</li>
-                    <li id="bio-age">Age:&nbsp;</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        <div id="student-section" style="display:none"></div>
+
+    </div>
         <footer>
-        <div class ="showjoin" id="show-join" onclick=""><h5>Join now!</h5></div>
-        <p class="contact">Contact Info: Just scream loudly at some trees, we'll hear you.</p>
+        <h3>Thank you to all <a href="https://www.codelouisville.org/">Code Louisville</a> staff and participants!</h3>
         </footer>
 </body>
 </html>
